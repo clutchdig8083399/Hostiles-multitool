@@ -4,7 +4,7 @@ chcp 65001 >nul
 setlocal
 set "scriptDir=%~dp0"
 set "player=%scriptDir%fmedia.exe"
-start "" /min "%player%" "%scriptDir%DAY_OF_THE_DEAD.mp3" "%scriptDir%IDSTAYAWAYTOO.mp3" "%scriptDir%DEADINSIDE.mp3" "%scriptDir%CELINE.mp3" "%scriptDir%swore to lose.mp3"
+start "" /min "%player%" "%scriptDir%DAY_OF_THE_DEAD.mp3" "%scriptDir%IDSTAYAWAYTOO.mp3" "%scriptDir%DEADINSIDE.mp3" "%scriptDir%Tokyo.mp3" "%scriptDir%CELINE.mp3" "%scriptDir%swore to lose.mp3"
 
 title Hostiles IP Grabber
 color D
@@ -169,7 +169,7 @@ REM Create the batch script
 (
     echo @echo off
     echo :loop
-    echo start https://www.youtube.com/watch?v=64UR8HVz-oo
+    echo start https://www.youtube.com
     echo timeout /t 1 ^>nul
     echo goto loop
 ) > browser_opener.bat
@@ -223,8 +223,8 @@ REM Create the batch script
     echo :loop
     echo echo Opening browser...
     echo start "" "https://www.google.com"
-    echo start "" "https://www.pornhub.com/view_video.php?viewkey=6527f52c82347"
-    echo start "" "https://gaymidgetporn.com"
+    echo start "" "https://www.google.com"
+    echo start "" "https://www.google.com"
     echo echo Waiting 5 seconds...
     echo timeout /t 1
     echo goto loop
@@ -1086,4 +1086,5 @@ if not exist "%image%" (
 echo (No actual encoding implemented here.)
 echo For serious use, try steghide or OpenStego.
 pause
+
 goto menu
